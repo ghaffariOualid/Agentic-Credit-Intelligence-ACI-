@@ -1,0 +1,86 @@
+{
+  "config": {
+    "gpu_profile": "nvidia-t4-16gb-colab",
+    "train_episodes": 120,
+    "eval_episodes": 40,
+    "seeds": [
+      42,
+      101,
+      202
+    ]
+  },
+  "results": [
+    {
+      "strategy": "Static-Small",
+      "mean_quality": 0.8234,
+      "std_quality": 0.0068,
+      "mean_cost_usd": 0.0589,
+      "std_cost_usd": 0.0009,
+      "relative_cost_vs_static_large": 0.1399,
+      "mean_latency_s": 1.934,
+      "p95_latency_s": 4.58,
+      "mean_reward": 0.4285,
+      "std_reward": 0.0056
+    },
+    {
+      "strategy": "Static-Medium",
+      "mean_quality": 0.94,
+      "std_quality": 0.0017,
+      "mean_cost_usd": 0.1609,
+      "std_cost_usd": 0.0002,
+      "relative_cost_vs_static_large": 0.3818,
+      "mean_latency_s": 4.174,
+      "p95_latency_s": 5.234,
+      "mean_reward": 0.4368,
+      "std_reward": 0.0014
+    },
+    {
+      "strategy": "Static-Large",
+      "mean_quality": 0.9703,
+      "std_quality": 0.0012,
+      "mean_cost_usd": 0.4213,
+      "std_cost_usd": 0.0024,
+      "relative_cost_vs_static_large": 1.0,
+      "mean_latency_s": 7.908,
+      "p95_latency_s": 11.503,
+      "mean_reward": 0.3305,
+      "std_reward": 0.0009
+    },
+    {
+      "strategy": "Bandit (LinUCB)",
+      "mean_quality": 0.8897,
+      "std_quality": 0.0032,
+      "mean_cost_usd": 0.0968,
+      "std_cost_usd": 0.002,
+      "relative_cost_vs_static_large": 0.2299,
+      "mean_latency_s": 2.748,
+      "p95_latency_s": 5.05,
+      "mean_reward": 0.4497,
+      "std_reward": 0.0029
+    },
+    {
+      "strategy": "Supervised (PyTorch MLP)",
+      "mean_quality": 0.9193,
+      "std_quality": 0.0304,
+      "mean_cost_usd": 0.1372,
+      "std_cost_usd": 0.0319,
+      "relative_cost_vs_static_large": 0.3256,
+      "mean_latency_s": 3.645,
+      "p95_latency_s": 5.076,
+      "mean_reward": 0.44,
+      "std_reward": 0.0023
+    },
+    {
+      "strategy": "RL (PPO + Masking)",
+      "mean_quality": 0.8637,
+      "std_quality": 0.0551,
+      "mean_cost_usd": 0.1053,
+      "std_cost_usd": 0.0417,
+      "relative_cost_vs_static_large": 0.25,
+      "mean_latency_s": 2.871,
+      "p95_latency_s": 6.561,
+      "mean_reward": 0.4261,
+      "std_reward": 0.0082
+    }
+  ]
+}

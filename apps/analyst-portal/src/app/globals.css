@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  --canvas: #F8FAFC;
+  --surface: #FFFFFF;
+  --border-subtle: #E2E8F0;
+  --ink-primary: #0F172A;
+  --ink-secondary: #475569;
+  --ink-muted: #64748B;
+  --accent-heritage: #9A4424;
+}
+
+body {
+  background-color: var(--canvas);
+  color: var(--ink-primary);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Bannière Tapis Marocain : motifs nets sur les côtés + cartouche verre dépoli blanc au centre */
+.tapis-banner {
+  position: relative;
+  background-image: url("/images/tapis-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.05);
+}
+
+.bank-card {
+  background: var(--surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: 14px;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+}
+
+.bank-input {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #CBD5E1;
+  background-color: #FFFFFF;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8125rem;
+  color: #0F172A;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.bank-input:focus {
+  outline: none;
+  border-color: #0F172A;
+  box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.08);
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  background-color: #0F172A;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  transition: background-color 150ms ease, opacity 150ms ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #1E293B;
+}
+
+.btn-primary:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: 10px;
+  border: 1px solid #CBD5E1;
+  background-color: #FFFFFF;
+  color: #0F172A;
+  font-weight: 600;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.75rem;
+  transition: background-color 150ms ease, border-color 150ms ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #F8FAFC;
+  border-color: #94A3B8;
+}

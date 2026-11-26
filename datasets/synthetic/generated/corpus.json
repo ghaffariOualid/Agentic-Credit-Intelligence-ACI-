@@ -1,0 +1,3254 @@
+[
+  {
+    "scenario_type": "debt_reconciliation_mismatch",
+    "case": {
+      "case_id": "CR-0261",
+      "company_name": "Atlas Industrie",
+      "sector": "Industrie manufacturière",
+      "facility_type": "Financement équipement",
+      "requested_amount": 2000000.0,
+      "currency": "MAD",
+      "tenor_months": 60,
+      "documents": [
+        {
+          "document_id": "CR-0261-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0261-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0261-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "needs_review",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0261-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "needs_review",
+      "created_at": "2026-11-26T09:14:34.198943Z",
+      "extraction_quality": 0.97
+    },
+    "statement": {
+      "case_id": "CR-0261",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 12.0,
+        "currency": "MAD",
+        "scale": 1000000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0261-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "Chiffre d'affaires: 12,0 M MAD",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": 1950.0,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0261-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBE / EBITDA: 1 950 kMAD",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": 850.0,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0261-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "Résultat net: 850 kMAD",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 3550000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0261-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dettes financières totales: 3 550 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "equity": {
+        "value": 5000000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0261-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Capitaux propres: 5 000 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 920000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0261-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 8",
+          "excerpt": "Solde trésorerie clôture: 920 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 4100000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0261-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Actif circulant: 4 100 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 2950000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0261-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Passif circulant: 2 950 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 980000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0261-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Échéances annuelles: 980 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 3920000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0261-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total tableau dettes: 3 920 000 MAD",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0261",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 12000000.0,
+      "ebitda": 1950000.0,
+      "net_income": 850000.0,
+      "total_debt": 3550000.0,
+      "equity": 5000000.0,
+      "net_debt": 2630000.0,
+      "free_cash_flow_proxy": 970000.0,
+      "debt_to_equity": 0.71,
+      "net_debt_to_ebitda": 1.3487,
+      "net_margin": 0.0708,
+      "ebitda_margin": 0.1625,
+      "current_ratio": 1.3898,
+      "dscr": 1.9898,
+      "requested_to_revenue": 0.1667,
+      "debt_reconciliation_diff": 370000.0,
+      "debt_reconciliation_diff_pct": 0.1042,
+      "is_debt_consistent": false,
+      "warnings": [
+        "Incohérence entre le bilan (3,550,000.00 MAD) et le tableau des dettes (3,920,000.00 MAD) : écart de 10.42 %."
+      ]
+    },
+    "expected_verification": {
+      "passed": false,
+      "blocking_errors": [
+        "Dette totale incohérente avec les pièces sources."
+      ],
+      "missing_evidence_fields": [],
+      "requires_hitl": true,
+      "suspension_reason": "Dette totale incohérente avec les pièces sources."
+    }
+  },
+  {
+    "scenario_type": "healthy_standard",
+    "case": {
+      "case_id": "CR-0260",
+      "company_name": "Nova Services",
+      "sector": "Services B2B",
+      "facility_type": "Crédit de trésorerie",
+      "requested_amount": 750000.0,
+      "currency": "MAD",
+      "tenor_months": 36,
+      "documents": [
+        {
+          "document_id": "CR-0260-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0260-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0260-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "validated",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0260-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "completed",
+      "created_at": "2026-11-26T09:14:34.198943Z",
+      "extraction_quality": 0.98
+    },
+    "statement": {
+      "case_id": "CR-0260",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 8400000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0260-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "Chiffre d'affaires: 8 400 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": 1680000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0260-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: 1 680 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": 920000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0260-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "Résultat net: 920 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 1400000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0260-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 3",
+          "excerpt": "Dettes financières: 1 400 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "equity": {
+        "value": 3500000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0260-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 3",
+          "excerpt": "Capitaux propres: 3 500 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 1100000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0260-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 5",
+          "excerpt": "Trésorerie: 1 100 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 3200000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0260-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 3",
+          "excerpt": "Actif circulant: 3 200 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 1600000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0260-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 3",
+          "excerpt": "Passif circulant: 1 600 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 480000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0260-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Service annuel dette: 480 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 1400000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0260-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 1 400 000 MAD",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0260",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 8400000.0,
+      "ebitda": 1680000.0,
+      "net_income": 920000.0,
+      "total_debt": 1400000.0,
+      "equity": 3500000.0,
+      "net_debt": 300000.0,
+      "free_cash_flow_proxy": 1200000.0,
+      "debt_to_equity": 0.4,
+      "net_debt_to_ebitda": 0.1786,
+      "net_margin": 0.1095,
+      "ebitda_margin": 0.2,
+      "current_ratio": 2.0,
+      "dscr": 3.5,
+      "requested_to_revenue": 0.0893,
+      "debt_reconciliation_diff": 0.0,
+      "debt_reconciliation_diff_pct": 0.0,
+      "is_debt_consistent": true,
+      "warnings": []
+    },
+    "expected_verification": {
+      "passed": true,
+      "blocking_errors": [],
+      "missing_evidence_fields": [],
+      "requires_hitl": false,
+      "suspension_reason": null
+    }
+  },
+  {
+    "scenario_type": "low_ocr_confidence_and_tight_liquidity",
+    "case": {
+      "case_id": "CR-0259",
+      "company_name": "Rivage Logistique",
+      "sector": "Transport & Logistique",
+      "facility_type": "Financement flotte",
+      "requested_amount": 1250000.0,
+      "currency": "MAD",
+      "tenor_months": 48,
+      "documents": [
+        {
+          "document_id": "CR-0259-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0259-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0259-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "validated",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0259-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "analyzing",
+      "created_at": "2026-11-26T09:14:34.198943Z",
+      "extraction_quality": 0.89
+    },
+    "statement": {
+      "case_id": "CR-0259",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 15200000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0259-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "CA: 15 200 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": 1850000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0259-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: 1 850 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": 310000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0259-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "Résultat net: 310 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 6800000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0259-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dettes financières: 6 800 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "equity": {
+        "value": 4200000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0259-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Capitaux propres: 4 200 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 450000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0259-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 9",
+          "excerpt": "Trésorerie: 450 000 MAD",
+          "confidence": 0.62
+        }
+      },
+      "current_assets": {
+        "value": 2800000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0259-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Actif circulant: 2 800 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 3300000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0259-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Passif circulant: 3 300 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 1700000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0259-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Service dette: 1 700 000 MAD",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 6800000.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0259-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 6 800 000 MAD",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0259",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 15200000.0,
+      "ebitda": 1850000.0,
+      "net_income": 310000.0,
+      "total_debt": 6800000.0,
+      "equity": 4200000.0,
+      "net_debt": 6350000.0,
+      "free_cash_flow_proxy": 150000.0,
+      "debt_to_equity": 1.619,
+      "net_debt_to_ebitda": 3.4324,
+      "net_margin": 0.0204,
+      "ebitda_margin": 0.1217,
+      "current_ratio": 0.8485,
+      "dscr": 1.0882,
+      "requested_to_revenue": 0.0822,
+      "debt_reconciliation_diff": 0.0,
+      "debt_reconciliation_diff_pct": 0.0,
+      "is_debt_consistent": true,
+      "warnings": [
+        "Liquidité générale inférieure à 1,0 (0.85) : tension potentielle de trésorerie.",
+        "DSCR inférieur au seuil de vigilance 1,20 (1.09) : capacité de remboursement tendue."
+      ]
+    },
+    "expected_verification": {
+      "passed": false,
+      "blocking_errors": [
+        "Confiance documentaire insuffisante (< 0.75) pour : cash_and_equivalents."
+      ],
+      "missing_evidence_fields": [
+        "cash_and_equivalents"
+      ],
+      "requires_hitl": true,
+      "suspension_reason": "Confiance documentaire insuffisante (< 0.75) pour : cash_and_equivalents."
+    }
+  },
+  {
+    "scenario_type": "healthy_standard",
+    "case": {
+      "case_id": "CR-0270",
+      "company_name": "Agroalimentaire Maghreb #1",
+      "sector": "Agroalimentaire",
+      "facility_type": "Financement croissance",
+      "requested_amount": 2573721.4,
+      "currency": "MAD",
+      "tenor_months": 48,
+      "documents": [
+        {
+          "document_id": "CR-0270-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0270-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0270-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "validated",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0270-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "draft",
+      "created_at": "2026-11-26T09:14:34.198943Z",
+      "extraction_quality": 0.96
+    },
+    "statement": {
+      "case_id": "CR-0270",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 30577071.94,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0270-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "CA: 30,577,071.94",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": 3164772.99,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0270-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: 3,164,772.99",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": 1325271.89,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0270-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "RN: 1,325,271.89",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 11243643.26,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0270-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dette: 11,243,643.26",
+          "confidence": 0.96
+        }
+      },
+      "equity": {
+        "value": 9691807.22,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0270-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "CP: 9,691,807.22",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 3292231.77,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0270-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 8",
+          "excerpt": "Cash: 3,292,231.77",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 11637398.82,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0270-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "AC: 11,637,398.82",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 6704091.91,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0270-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "PC: 6,704,091.91",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 2498249.63,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0270-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "SD: 2,498,249.63",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 11243643.26,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0270-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 11,243,643.26",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0270",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 30577071.94,
+      "ebitda": 3164772.99,
+      "net_income": 1325271.89,
+      "total_debt": 11243643.26,
+      "equity": 9691807.22,
+      "net_debt": 7951411.49,
+      "free_cash_flow_proxy": 666523.36,
+      "debt_to_equity": 1.1601,
+      "net_debt_to_ebitda": 2.5125,
+      "net_margin": 0.0433,
+      "ebitda_margin": 0.1035,
+      "current_ratio": 1.7359,
+      "dscr": 1.2668,
+      "requested_to_revenue": 0.0842,
+      "debt_reconciliation_diff": 0.0,
+      "debt_reconciliation_diff_pct": 0.0,
+      "is_debt_consistent": true,
+      "warnings": []
+    },
+    "expected_verification": {
+      "passed": true,
+      "blocking_errors": [],
+      "missing_evidence_fields": [],
+      "requires_hitl": false,
+      "suspension_reason": null
+    }
+  },
+  {
+    "scenario_type": "healthy_mixed_scales",
+    "case": {
+      "case_id": "CR-0271",
+      "company_name": "BTP Maghreb #2",
+      "sector": "BTP & Matériaux",
+      "facility_type": "Financement croissance",
+      "requested_amount": 2664330.9,
+      "currency": "MAD",
+      "tenor_months": 48,
+      "documents": [
+        {
+          "document_id": "CR-0271-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0271-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0271-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "validated",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0271-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "draft",
+      "created_at": "2026-11-26T09:14:34.198943Z",
+      "extraction_quality": 0.96
+    },
+    "statement": {
+      "case_id": "CR-0271",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 14306.4357,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0271-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "CA: 14,306,435.74",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": 2636.4275,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0271-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: 2,636,427.49",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": 1292.6701,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0271-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "RN: 1,292,670.10",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 7457.3731,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0271-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dette: 7,457,373.14",
+          "confidence": 0.96
+        }
+      },
+      "equity": {
+        "value": 6649.7155,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0271-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "CP: 6,649,715.51",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 1172.4408,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0271-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 8",
+          "excerpt": "Cash: 1,172,440.77",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 4304.2003,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0271-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "AC: 4,304,200.33",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 2726.5267,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0271-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "PC: 2,726,526.74",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 1990.5969,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0271-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "SD: 1,990,596.85",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 7457.3731,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0271-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 7,457,373.14",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0271",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 14306435.7,
+      "ebitda": 2636427.5,
+      "net_income": 1292670.1,
+      "total_debt": 7457373.1,
+      "equity": 6649715.5,
+      "net_debt": 6284932.3,
+      "free_cash_flow_proxy": 645830.6,
+      "debt_to_equity": 1.1215,
+      "net_debt_to_ebitda": 2.3839,
+      "net_margin": 0.0904,
+      "ebitda_margin": 0.1843,
+      "current_ratio": 1.5786,
+      "dscr": 1.3244,
+      "requested_to_revenue": 0.1862,
+      "debt_reconciliation_diff": 0.0,
+      "debt_reconciliation_diff_pct": 0.0,
+      "is_debt_consistent": true,
+      "warnings": []
+    },
+    "expected_verification": {
+      "passed": true,
+      "blocking_errors": [],
+      "missing_evidence_fields": [],
+      "requires_hitl": false,
+      "suspension_reason": null
+    }
+  },
+  {
+    "scenario_type": "debt_reconciliation_mismatch",
+    "case": {
+      "case_id": "CR-0272",
+      "company_name": "Textile Maghreb #3",
+      "sector": "Textile & Confection",
+      "facility_type": "Financement croissance",
+      "requested_amount": 5997803.56,
+      "currency": "MAD",
+      "tenor_months": 36,
+      "documents": [
+        {
+          "document_id": "CR-0272-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0272-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0272-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "needs_review",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0272-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "draft",
+      "created_at": "2026-11-26T09:14:34.198943Z",
+      "extraction_quality": 0.96
+    },
+    "statement": {
+      "case_id": "CR-0272",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 32925575.8,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0272-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "CA: 32,925,575.80",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": 4860969.76,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0272-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: 4,860,969.76",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": 1890284.7,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0272-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "RN: 1,890,284.70",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 12738722.97,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0272-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dette: 12,738,722.97",
+          "confidence": 0.96
+        }
+      },
+      "equity": {
+        "value": 17686431.42,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0272-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "CP: 17,686,431.42",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 1622394.06,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0272-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 8",
+          "excerpt": "Cash: 1,622,394.06",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 7816826.31,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0272-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "AC: 7,816,826.31",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 6286669.35,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0272-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "PC: 6,286,669.35",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 3062040.0,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0272-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "SD: 3,062,040.00",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 14736860.37,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0272-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 14,736,860.37",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0272",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 32925575.8,
+      "ebitda": 4860969.76,
+      "net_income": 1890284.7,
+      "total_debt": 12738722.97,
+      "equity": 17686431.42,
+      "net_debt": 11116328.91,
+      "free_cash_flow_proxy": 1798929.76,
+      "debt_to_equity": 0.7203,
+      "net_debt_to_ebitda": 2.2869,
+      "net_margin": 0.0574,
+      "ebitda_margin": 0.1476,
+      "current_ratio": 1.2434,
+      "dscr": 1.5875,
+      "requested_to_revenue": 0.1822,
+      "debt_reconciliation_diff": 1998137.4,
+      "debt_reconciliation_diff_pct": 0.1569,
+      "is_debt_consistent": false,
+      "warnings": [
+        "Incohérence entre le bilan (12,738,722.97 MAD) et le tableau des dettes (14,736,860.37 MAD) : écart de 15.69 %."
+      ]
+    },
+    "expected_verification": {
+      "passed": false,
+      "blocking_errors": [
+        "Dette totale incohérente avec les pièces sources."
+      ],
+      "missing_evidence_fields": [],
+      "requires_hitl": true,
+      "suspension_reason": "Dette totale incohérente avec les pièces sources."
+    }
+  },
+  {
+    "scenario_type": "tight_dscr_and_liquidity",
+    "case": {
+      "case_id": "CR-0273",
+      "company_name": "Énergie Maghreb #4",
+      "sector": "Énergie & Environnement",
+      "facility_type": "Financement croissance",
+      "requested_amount": 4915419.1,
+      "currency": "MAD",
+      "tenor_months": 60,
+      "documents": [
+        {
+          "document_id": "CR-0273-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0273-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0273-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "validated",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0273-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "draft",
+      "created_at": "2026-11-26T09:14:34.198943Z",
+      "extraction_quality": 0.96
+    },
+    "statement": {
+      "case_id": "CR-0273",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 43924630.56,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0273-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "CA: 43,924,630.56",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": 6720240.63,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0273-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: 6,720,240.63",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": 3279545.69,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0273-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "RN: 3,279,545.69",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 22576006.8,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0273-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dette: 22,576,006.80",
+          "confidence": 0.96
+        }
+      },
+      "equity": {
+        "value": 21910545.68,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0273-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "CP: 21,910,545.68",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 5542000.95,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0273-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 8",
+          "excerpt": "Cash: 5,542,000.95",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 14228215.07,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0273-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "AC: 14,228,215.07",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 18157236.48,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0273-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "PC: 18,157,236.48",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 6125204.29,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0273-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "SD: 6,125,204.29",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 22576006.8,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0273-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 22,576,006.80",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0273",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 43924630.56,
+      "ebitda": 6720240.63,
+      "net_income": 3279545.69,
+      "total_debt": 22576006.8,
+      "equity": 21910545.68,
+      "net_debt": 17034005.85,
+      "free_cash_flow_proxy": 595036.34,
+      "debt_to_equity": 1.0304,
+      "net_debt_to_ebitda": 2.5347,
+      "net_margin": 0.0747,
+      "ebitda_margin": 0.153,
+      "current_ratio": 0.7836,
+      "dscr": 1.0971,
+      "requested_to_revenue": 0.1119,
+      "debt_reconciliation_diff": 0.0,
+      "debt_reconciliation_diff_pct": 0.0,
+      "is_debt_consistent": true,
+      "warnings": [
+        "Liquidité générale inférieure à 1,0 (0.78) : tension potentielle de trésorerie.",
+        "DSCR inférieur au seuil de vigilance 1,20 (1.10) : capacité de remboursement tendue."
+      ]
+    },
+    "expected_verification": {
+      "passed": true,
+      "blocking_errors": [],
+      "missing_evidence_fields": [],
+      "requires_hitl": false,
+      "suspension_reason": null
+    }
+  },
+  {
+    "scenario_type": "negative_ebitda_edge_case",
+    "case": {
+      "case_id": "CR-0274",
+      "company_name": "Distribution Maghreb #5",
+      "sector": "Distribution spécialisée",
+      "facility_type": "Financement croissance",
+      "requested_amount": 7719349.11,
+      "currency": "MAD",
+      "tenor_months": 36,
+      "documents": [
+        {
+          "document_id": "CR-0274-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0274-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0274-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "validated",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0274-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "draft",
+      "created_at": "2026-11-26T09:14:34.198943Z",
+      "extraction_quality": 0.96
+    },
+    "statement": {
+      "case_id": "CR-0274",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 44408860.83,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0274-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "CA: 44,408,860.83",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": -1776354.43,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0274-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: -1,776,354.43",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": -1001560.91,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0274-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "RN: -1,001,560.91",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 17395334.55,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0274-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dette: 17,395,334.55",
+          "confidence": 0.96
+        }
+      },
+      "equity": {
+        "value": 22646080.98,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0274-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "CP: 22,646,080.98",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 3789897.93,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0274-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 8",
+          "excerpt": "Cash: 3,789,897.93",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 16437490.28,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0274-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "AC: 16,437,490.28",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 9842707.2,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0274-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "PC: 9,842,707.20",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 3749165.49,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0274-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "SD: 3,749,165.49",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 17395334.55,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0274-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 17,395,334.55",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0274",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 44408860.83,
+      "ebitda": -1776354.43,
+      "net_income": -1001560.91,
+      "total_debt": 17395334.55,
+      "equity": 22646080.98,
+      "net_debt": 13605436.62,
+      "free_cash_flow_proxy": -5525519.92,
+      "debt_to_equity": 0.7681,
+      "net_debt_to_ebitda": null,
+      "net_margin": -0.0226,
+      "ebitda_margin": -0.04,
+      "current_ratio": 1.67,
+      "dscr": -0.4738,
+      "requested_to_revenue": 0.1738,
+      "debt_reconciliation_diff": 0.0,
+      "debt_reconciliation_diff_pct": 0.0,
+      "is_debt_consistent": true,
+      "warnings": [
+        "EBITDA négatif ou nul : ratio Dette nette/EBITDA non significatif.",
+        "DSCR inférieur au seuil de vigilance 1,20 (-0.47) : capacité de remboursement tendue."
+      ]
+    },
+    "expected_verification": {
+      "passed": true,
+      "blocking_errors": [],
+      "missing_evidence_fields": [],
+      "requires_hitl": false,
+      "suspension_reason": null
+    }
+  },
+  {
+    "scenario_type": "low_ocr_confidence",
+    "case": {
+      "case_id": "CR-0275",
+      "company_name": "Chimie Maghreb #6",
+      "sector": "Chimie & Plasturgie",
+      "facility_type": "Financement croissance",
+      "requested_amount": 5814296.09,
+      "currency": "MAD",
+      "tenor_months": 36,
+      "documents": [
+        {
+          "document_id": "CR-0275-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0275-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0275-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "validated",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0275-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "draft",
+      "created_at": "2026-11-26T09:14:34.200953Z",
+      "extraction_quality": 0.84
+    },
+    "statement": {
+      "case_id": "CR-0275",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 29365240.23,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0275-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "CA: 29,365,240.23",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": 3640097.88,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0275-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: 3,640,097.88",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": 1937557.49,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0275-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "RN: 1,937,557.49",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 6738406.93,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0275-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dette: 6,738,406.93",
+          "confidence": 0.61
+        }
+      },
+      "equity": {
+        "value": 8780816.1,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0275-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "CP: 8,780,816.10",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 4080368.7,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0275-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 8",
+          "excerpt": "Cash: 4,080,368.70",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 9843227.26,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0275-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "AC: 9,843,227.26",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 7058429.86,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0275-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "PC: 7,058,429.86",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 1674234.19,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0275-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "SD: 1,674,234.19",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 6738406.93,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0275-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 6,738,406.93",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0275",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 29365240.23,
+      "ebitda": 3640097.88,
+      "net_income": 1937557.49,
+      "total_debt": 6738406.93,
+      "equity": 8780816.1,
+      "net_debt": 2658038.23,
+      "free_cash_flow_proxy": 1965863.69,
+      "debt_to_equity": 0.7674,
+      "net_debt_to_ebitda": 0.7302,
+      "net_margin": 0.066,
+      "ebitda_margin": 0.124,
+      "current_ratio": 1.3945,
+      "dscr": 2.1742,
+      "requested_to_revenue": 0.198,
+      "debt_reconciliation_diff": 0.0,
+      "debt_reconciliation_diff_pct": 0.0,
+      "is_debt_consistent": true,
+      "warnings": []
+    },
+    "expected_verification": {
+      "passed": false,
+      "blocking_errors": [
+        "Confiance documentaire insuffisante (< 0.75) pour : total_debt."
+      ],
+      "missing_evidence_fields": [
+        "total_debt"
+      ],
+      "requires_hitl": true,
+      "suspension_reason": "Confiance documentaire insuffisante (< 0.75) pour : total_debt."
+    }
+  },
+  {
+    "scenario_type": "healthy_standard",
+    "case": {
+      "case_id": "CR-0276",
+      "company_name": "Agroalimentaire Maghreb #7",
+      "sector": "Agroalimentaire",
+      "facility_type": "Financement croissance",
+      "requested_amount": 1917361.02,
+      "currency": "MAD",
+      "tenor_months": 84,
+      "documents": [
+        {
+          "document_id": "CR-0276-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0276-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0276-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "validated",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0276-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "draft",
+      "created_at": "2026-11-26T09:14:34.200953Z",
+      "extraction_quality": 0.96
+    },
+    "statement": {
+      "case_id": "CR-0276",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 14161922.88,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0276-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "CA: 14,161,922.88",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": 1479836.45,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0276-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: 1,479,836.45",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": 634647.49,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0276-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "RN: 634,647.49",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 2722974.59,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0276-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dette: 2,722,974.59",
+          "confidence": 0.96
+        }
+      },
+      "equity": {
+        "value": 4677998.41,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0276-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "CP: 4,677,998.41",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 1901818.38,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0276-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 8",
+          "excerpt": "Cash: 1,901,818.38",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 5349612.17,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0276-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "AC: 5,349,612.17",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 3447308.08,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0276-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "PC: 3,447,308.08",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 668609.71,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0276-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "SD: 668,609.71",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 2722974.59,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0276-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 2,722,974.59",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0276",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 14161922.88,
+      "ebitda": 1479836.45,
+      "net_income": 634647.49,
+      "total_debt": 2722974.59,
+      "equity": 4677998.41,
+      "net_debt": 821156.21,
+      "free_cash_flow_proxy": 811226.74,
+      "debt_to_equity": 0.5821,
+      "net_debt_to_ebitda": 0.5549,
+      "net_margin": 0.0448,
+      "ebitda_margin": 0.1045,
+      "current_ratio": 1.5518,
+      "dscr": 2.2133,
+      "requested_to_revenue": 0.1354,
+      "debt_reconciliation_diff": 0.0,
+      "debt_reconciliation_diff_pct": 0.0,
+      "is_debt_consistent": true,
+      "warnings": []
+    },
+    "expected_verification": {
+      "passed": true,
+      "blocking_errors": [],
+      "missing_evidence_fields": [],
+      "requires_hitl": false,
+      "suspension_reason": null
+    }
+  },
+  {
+    "scenario_type": "healthy_mixed_scales",
+    "case": {
+      "case_id": "CR-0277",
+      "company_name": "BTP Maghreb #8",
+      "sector": "BTP & Matériaux",
+      "facility_type": "Financement croissance",
+      "requested_amount": 1064697.9,
+      "currency": "MAD",
+      "tenor_months": 84,
+      "documents": [
+        {
+          "document_id": "CR-0277-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0277-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0277-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "validated",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0277-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "draft",
+      "created_at": "2026-11-26T09:14:34.200953Z",
+      "extraction_quality": 0.96
+    },
+    "statement": {
+      "case_id": "CR-0277",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 10714.8636,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0277-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "CA: 10,714,863.62",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": 1280.9431,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0277-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: 1,280,943.14",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": 686.9022,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0277-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "RN: 686,902.23",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 5168.7127,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0277-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dette: 5,168,712.65",
+          "confidence": 0.96
+        }
+      },
+      "equity": {
+        "value": 4411.2363,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0277-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "CP: 4,411,236.35",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 887.6556,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0277-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 8",
+          "excerpt": "Cash: 887,655.55",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 3482.7156,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0277-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "AC: 3,482,715.62",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 2293.7128,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0277-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "PC: 2,293,712.79",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 1445.8573,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0277-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "SD: 1,445,857.31",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 5168.7127,
+        "currency": "MAD",
+        "scale": 1000,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0277-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 5,168,712.65",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0277",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 10714863.6,
+      "ebitda": 1280943.1,
+      "net_income": 686902.2,
+      "total_debt": 5168712.7,
+      "equity": 4411236.3,
+      "net_debt": 4281057.1,
+      "free_cash_flow_proxy": -164914.2,
+      "debt_to_equity": 1.1717,
+      "net_debt_to_ebitda": 3.3421,
+      "net_margin": 0.0641,
+      "ebitda_margin": 0.1195,
+      "current_ratio": 1.5184,
+      "dscr": 0.8859,
+      "requested_to_revenue": 0.0994,
+      "debt_reconciliation_diff": 0.0,
+      "debt_reconciliation_diff_pct": 0.0,
+      "is_debt_consistent": true,
+      "warnings": [
+        "DSCR inférieur au seuil de vigilance 1,20 (0.89) : capacité de remboursement tendue."
+      ]
+    },
+    "expected_verification": {
+      "passed": true,
+      "blocking_errors": [],
+      "missing_evidence_fields": [],
+      "requires_hitl": false,
+      "suspension_reason": null
+    }
+  },
+  {
+    "scenario_type": "debt_reconciliation_mismatch",
+    "case": {
+      "case_id": "CR-0278",
+      "company_name": "Textile Maghreb #9",
+      "sector": "Textile & Confection",
+      "facility_type": "Financement croissance",
+      "requested_amount": 1865033.91,
+      "currency": "MAD",
+      "tenor_months": 36,
+      "documents": [
+        {
+          "document_id": "CR-0278-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0278-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0278-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "needs_review",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0278-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "draft",
+      "created_at": "2026-11-26T09:14:34.200953Z",
+      "extraction_quality": 0.96
+    },
+    "statement": {
+      "case_id": "CR-0278",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 8636376.49,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0278-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "CA: 8,636,376.49",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": 920605.71,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0278-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: 920,605.71",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": 347447.9,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0278-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "RN: 347,447.90",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 4622269.8,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0278-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dette: 4,622,269.80",
+          "confidence": 0.96
+        }
+      },
+      "equity": {
+        "value": 3784752.2,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0278-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "CP: 3,784,752.20",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 710048.3,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0278-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 8",
+          "excerpt": "Cash: 710,048.30",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 1998759.68,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0278-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "AC: 1,998,759.68",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 1328147.4,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0278-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "PC: 1,328,147.40",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 1292442.74,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0278-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "SD: 1,292,442.74",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 5193091.1,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0278-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 5,193,091.10",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0278",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 8636376.49,
+      "ebitda": 920605.71,
+      "net_income": 347447.9,
+      "total_debt": 4622269.8,
+      "equity": 3784752.2,
+      "net_debt": 3912221.5,
+      "free_cash_flow_proxy": -371837.03,
+      "debt_to_equity": 1.2213,
+      "net_debt_to_ebitda": 4.2496,
+      "net_margin": 0.0402,
+      "ebitda_margin": 0.1066,
+      "current_ratio": 1.5049,
+      "dscr": 0.7123,
+      "requested_to_revenue": 0.216,
+      "debt_reconciliation_diff": 570821.3,
+      "debt_reconciliation_diff_pct": 0.1235,
+      "is_debt_consistent": false,
+      "warnings": [
+        "DSCR inférieur au seuil de vigilance 1,20 (0.71) : capacité de remboursement tendue.",
+        "Incohérence entre le bilan (4,622,269.80 MAD) et le tableau des dettes (5,193,091.10 MAD) : écart de 12.35 %."
+      ]
+    },
+    "expected_verification": {
+      "passed": false,
+      "blocking_errors": [
+        "Dette totale incohérente avec les pièces sources."
+      ],
+      "missing_evidence_fields": [],
+      "requires_hitl": true,
+      "suspension_reason": "Dette totale incohérente avec les pièces sources."
+    }
+  },
+  {
+    "scenario_type": "tight_dscr_and_liquidity",
+    "case": {
+      "case_id": "CR-0279",
+      "company_name": "Énergie Maghreb #10",
+      "sector": "Énergie & Environnement",
+      "facility_type": "Financement croissance",
+      "requested_amount": 5833243.96,
+      "currency": "MAD",
+      "tenor_months": 60,
+      "documents": [
+        {
+          "document_id": "CR-0279-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0279-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0279-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "validated",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0279-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "draft",
+      "created_at": "2026-11-26T09:14:34.201458Z",
+      "extraction_quality": 0.96
+    },
+    "statement": {
+      "case_id": "CR-0279",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 32211336.41,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0279-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "CA: 32,211,336.41",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": 3737714.7,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0279-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: 3,737,714.70",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": 2134971.84,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0279-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "RN: 2,134,971.84",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 18301117.18,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0279-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dette: 18,301,117.18",
+          "confidence": 0.96
+        }
+      },
+      "equity": {
+        "value": 15308867.32,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0279-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "CP: 15,308,867.32",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 2384204.12,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0279-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 8",
+          "excerpt": "Cash: 2,384,204.12",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 8788219.66,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0279-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "AC: 8,788,219.66",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 10014522.9,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0279-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "PC: 10,014,522.90",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 3366975.75,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0279-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "SD: 3,366,975.75",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 18301117.18,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0279-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 18,301,117.18",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0279",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 32211336.41,
+      "ebitda": 3737714.7,
+      "net_income": 2134971.84,
+      "total_debt": 18301117.18,
+      "equity": 15308867.32,
+      "net_debt": 15916913.06,
+      "free_cash_flow_proxy": 370738.95,
+      "debt_to_equity": 1.1955,
+      "net_debt_to_ebitda": 4.2585,
+      "net_margin": 0.0663,
+      "ebitda_margin": 0.116,
+      "current_ratio": 0.8775,
+      "dscr": 1.1101,
+      "requested_to_revenue": 0.1811,
+      "debt_reconciliation_diff": 0.0,
+      "debt_reconciliation_diff_pct": 0.0,
+      "is_debt_consistent": true,
+      "warnings": [
+        "Liquidité générale inférieure à 1,0 (0.88) : tension potentielle de trésorerie.",
+        "DSCR inférieur au seuil de vigilance 1,20 (1.11) : capacité de remboursement tendue."
+      ]
+    },
+    "expected_verification": {
+      "passed": true,
+      "blocking_errors": [],
+      "missing_evidence_fields": [],
+      "requires_hitl": false,
+      "suspension_reason": null
+    }
+  },
+  {
+    "scenario_type": "negative_ebitda_edge_case",
+    "case": {
+      "case_id": "CR-0280",
+      "company_name": "Distribution Maghreb #11",
+      "sector": "Distribution spécialisée",
+      "facility_type": "Financement croissance",
+      "requested_amount": 5806835.18,
+      "currency": "MAD",
+      "tenor_months": 48,
+      "documents": [
+        {
+          "document_id": "CR-0280-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0280-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0280-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "validated",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0280-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "draft",
+      "created_at": "2026-11-26T09:14:34.201458Z",
+      "extraction_quality": 0.96
+    },
+    "statement": {
+      "case_id": "CR-0280",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 43875523.95,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0280-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "CA: 43,875,523.95",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": -1755020.96,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0280-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: -1,755,020.96",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": -948572.24,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0280-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "RN: -948,572.24",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 8244083.02,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0280-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dette: 8,244,083.02",
+          "confidence": 0.96
+        }
+      },
+      "equity": {
+        "value": 17651320.83,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0280-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "CP: 17,651,320.83",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 4498558.32,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0280-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 8",
+          "excerpt": "Cash: 4,498,558.32",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 16299778.32,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0280-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "AC: 16,299,778.32",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 11447315.81,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0280-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "PC: 11,447,315.81",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 1647918.91,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0280-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "SD: 1,647,918.91",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 8244083.02,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0280-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 8,244,083.02",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0280",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 43875523.95,
+      "ebitda": -1755020.96,
+      "net_income": -948572.24,
+      "total_debt": 8244083.02,
+      "equity": 17651320.83,
+      "net_debt": 3745524.7,
+      "free_cash_flow_proxy": -3402939.87,
+      "debt_to_equity": 0.4671,
+      "net_debt_to_ebitda": null,
+      "net_margin": -0.0216,
+      "ebitda_margin": -0.04,
+      "current_ratio": 1.4239,
+      "dscr": -1.065,
+      "requested_to_revenue": 0.1323,
+      "debt_reconciliation_diff": 0.0,
+      "debt_reconciliation_diff_pct": 0.0,
+      "is_debt_consistent": true,
+      "warnings": [
+        "EBITDA négatif ou nul : ratio Dette nette/EBITDA non significatif.",
+        "DSCR inférieur au seuil de vigilance 1,20 (-1.06) : capacité de remboursement tendue."
+      ]
+    },
+    "expected_verification": {
+      "passed": true,
+      "blocking_errors": [],
+      "missing_evidence_fields": [],
+      "requires_hitl": false,
+      "suspension_reason": null
+    }
+  },
+  {
+    "scenario_type": "low_ocr_confidence",
+    "case": {
+      "case_id": "CR-0281",
+      "company_name": "Chimie Maghreb #12",
+      "sector": "Chimie & Plasturgie",
+      "facility_type": "Financement croissance",
+      "requested_amount": 3270126.14,
+      "currency": "MAD",
+      "tenor_months": 36,
+      "documents": [
+        {
+          "document_id": "CR-0281-DOC1",
+          "filename": "Bilan.pdf",
+          "doc_type": "bilan",
+          "status": "validated",
+          "page_or_sheet_count": 6,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0281-DOC2",
+          "filename": "Resultat.pdf",
+          "doc_type": "resultat",
+          "status": "validated",
+          "page_or_sheet_count": 3,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0281-DOC3",
+          "filename": "Dettes.xlsx",
+          "doc_type": "dettes",
+          "status": "validated",
+          "page_or_sheet_count": 2,
+          "storage_uri": null
+        },
+        {
+          "document_id": "CR-0281-DOC4",
+          "filename": "Releves.pdf",
+          "doc_type": "releves",
+          "status": "validated",
+          "page_or_sheet_count": 10,
+          "storage_uri": null
+        }
+      ],
+      "status": "draft",
+      "created_at": "2026-11-26T09:14:34.201458Z",
+      "extraction_quality": 0.84
+    },
+    "statement": {
+      "case_id": "CR-0281",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": {
+        "value": 26575161.2,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0281-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "CA: 26,575,161.20",
+          "confidence": 0.98
+        }
+      },
+      "ebitda": {
+        "value": 5554413.51,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0281-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "EBITDA: 5,554,413.51",
+          "confidence": 0.98
+        }
+      },
+      "net_income": {
+        "value": 2680495.63,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0281-DOC2",
+          "document_name": "Resultat.pdf",
+          "page_or_sheet": "p. 2",
+          "excerpt": "RN: 2,680,495.63",
+          "confidence": 0.98
+        }
+      },
+      "total_debt": {
+        "value": 4697535.55,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0281-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "Dette: 4,697,535.55",
+          "confidence": 0.61
+        }
+      },
+      "equity": {
+        "value": 6648349.77,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0281-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "CP: 6,648,349.77",
+          "confidence": 0.98
+        }
+      },
+      "cash_and_equivalents": {
+        "value": 1114766.2,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0281-DOC4",
+          "document_name": "Releves.pdf",
+          "page_or_sheet": "p. 8",
+          "excerpt": "Cash: 1,114,766.20",
+          "confidence": 0.98
+        }
+      },
+      "current_assets": {
+        "value": 10290905.65,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0281-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "AC: 10,290,905.65",
+          "confidence": 0.98
+        }
+      },
+      "current_liabilities": {
+        "value": 8372851.29,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0281-DOC1",
+          "document_name": "Bilan.pdf",
+          "page_or_sheet": "p. 4",
+          "excerpt": "PC: 8,372,851.29",
+          "confidence": 0.98
+        }
+      },
+      "annual_debt_service": {
+        "value": 1236234.24,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0281-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "SD: 1,236,234.24",
+          "confidence": 0.98
+        }
+      },
+      "debt_schedule_total": {
+        "value": 4697535.55,
+        "currency": "MAD",
+        "scale": 1,
+        "period": "FY2025",
+        "evidence": {
+          "document_id": "CR-0281-DOC3",
+          "document_name": "Dettes.xlsx",
+          "page_or_sheet": "T1",
+          "excerpt": "Total dettes: 4,697,535.55",
+          "confidence": 0.98
+        }
+      }
+    },
+    "expected_metrics": {
+      "case_id": "CR-0281",
+      "fiscal_year": "FY2025",
+      "currency": "MAD",
+      "revenue": 26575161.2,
+      "ebitda": 5554413.51,
+      "net_income": 2680495.63,
+      "total_debt": 4697535.55,
+      "equity": 6648349.77,
+      "net_debt": 3582769.35,
+      "free_cash_flow_proxy": 4318179.27,
+      "debt_to_equity": 0.7066,
+      "net_debt_to_ebitda": 0.645,
+      "net_margin": 0.1009,
+      "ebitda_margin": 0.209,
+      "current_ratio": 1.2291,
+      "dscr": 4.493,
+      "requested_to_revenue": 0.1231,
+      "debt_reconciliation_diff": 0.0,
+      "debt_reconciliation_diff_pct": 0.0,
+      "is_debt_consistent": true,
+      "warnings": []
+    },
+    "expected_verification": {
+      "passed": false,
+      "blocking_errors": [
+        "Confiance documentaire insuffisante (< 0.75) pour : total_debt."
+      ],
+      "missing_evidence_fields": [
+        "total_debt"
+      ],
+      "requires_hitl": true,
+      "suspension_reason": "Confiance documentaire insuffisante (< 0.75) pour : total_debt."
+    }
+  }
+]
